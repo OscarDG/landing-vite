@@ -3,7 +3,9 @@ import PlusIcon from '../assets/plus.tsx'
 import {features} from '../data/features.js'
 
 export function FeaturesCart() {
+
     const featuresChart = features.map((feature) => {
+
         return(
             <div className="feature-card" key={feature.id}>
                 <h2>{feature.name}</h2>

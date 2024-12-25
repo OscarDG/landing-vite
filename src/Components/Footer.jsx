@@ -1,8 +1,12 @@
 import '../css/footer.css'
 
 export function Footer(){
+
     return(
         <div className="footer-wrap">
+        <div className="footerTag-Wrap">
+            <span className='footer-tag'></span>
+        </div>
             <div className="newsletter">
                 <h2>¡Suscríbete a nuestro boletín de noticias!</h2>
                 <form className="form">
