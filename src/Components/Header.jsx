@@ -22,6 +22,16 @@ useEffect(() => {
     };
 }, []);
 
+const [visible, setVisible] = useState('')
+
+const handleClick = () => {
+        if (visible === '') {
+            setVisible('visible')
+        }else{
+        setVisible('');
+        }
+    };
+
 const menuLinks = ['MEN´S', 'WOMEN´S', 'KIDS', 'SHOES', 'EQUIPMENT']
 
 const linksWrap = menuLinks.map((link) => {
@@ -35,6 +45,21 @@ const linksWrap = menuLinks.map((link) => {
     return (
     <header className={`${sticky ? 'scrolled' : ''}`}>
         <nav className="main-nav">
+            <div className='mobile-nav-button' onClick={handleClick}>
+                <div className={`nav-button--wrap ${visible ? 'visible' : ''}`}>
+                    <span className={`${visible ? 'visible' : ''}`} id='line1'></span>
+                    <span className={`${visible ? 'visible' : ''}`} id='line2'></span>
+                    <span className={`${visible ? 'visible' : ''}`} id='line3'></span>
+                </div>
+            </div>
+            <div className={`mobile-menu ${visible ? 'visible' : ''}`}>
+                <div className='mobile-menu--wrap'>
+                    <ul className='nav-menu--mobile'>
+                        {linksWrap}
+                    </ul>
+
+                </div>
+            </div>
             <ul className="nav-menu">
                 {linksWrap}
             </ul>
