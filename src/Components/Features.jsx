@@ -22,7 +22,7 @@ export function Features (){
     };
 
     return (
-    <section className="section features">
+    <section className="features">
         <motion.div className='features-image' variants={cardVariants} initial="offScreen" whileInView= "onScreen">
                 <img src='./src/assets/break-dancer-doing.png' alt='break dancer'/>
         </motion.div>

@@ -9,7 +9,7 @@ const [sticky, setSticky] = useState(false)
 
 useEffect(() => {
     const handleScroll = () => {
-        if (window.scrollY > 600){
+        if (window.scrollY > 450){
             setSticky(true)
         }else{
             setSticky(false);
@@ -68,7 +68,7 @@ const linksWrap = menuLinks.map((link) => {
                    <Lookicon />
                 </span>
             </a>
-            <a className="nav-store" href="" target="_blank">
+            <a className={`nav-store ${sticky ? 'scrolled' : ''}`}href="" target="_blank">
                 <span>
                     <CartIcon />
                 </span>

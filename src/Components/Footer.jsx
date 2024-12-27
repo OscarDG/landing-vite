@@ -14,7 +14,7 @@ export function Footer(){
                         <button type="button">Suscribirte</button>
                 </form>
             </div>
-            <div className="contact">
+            <div className= "contact">
                 <h2>Contacto</h2>
                 <p>(+57) 317-4048898</p>
                 <p>contacto@correo.com</p>

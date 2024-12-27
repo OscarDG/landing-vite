@@ -1,6 +1,6 @@
 @import '../_variables.sass'
 
-@media screen and ( max-width: $layout-breakpoint-small)
+@media screen and ( max-width: 640px)
     header
         position: fixed
         display: flex
@@ -9,17 +9,21 @@
         justify-content: center
         align-content: center
         width: 100%
-        height: 60px
+        height: 100px
         background-color: transparent
         transition: background-color 0s ease
         z-index: 3
+
+    header.scrolled
+        background-color: rgba(238,238,238, .7)
     
     .main-nav
         position: relative
         display: flex
         flex-direction: row
         justify-content: center
-        width: 100vh
+        align-items: center
+        width: 100%
         height: 30px
     
     .nav-menu
@@ -27,14 +31,14 @@
 
     .mobile-nav-button
         position: absolute
-        top: 25px
+        top: 0px
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
         z-index: 2
-        width: 90px
-        height: 90px
+        width: 80px
+        height: 80px
     
     .nav-button--wrap
         position: absolute
@@ -42,55 +46,52 @@
         flex-direction: column
         justify-content: center
         align-items: center
-        width: 60px
-        height: 60px
+        width: 75px
+        height: 75px
         border-radius: 140px
-    
-    .nav-button--wrap.visible
-        border: solid 2px red
-        
+        cursor: pointer
 
     #line1, #line2, #line3
-        width: 70px
-        height: 4px
+        width: 60px
+        height: 5px
         background-color: #000
         border-radius: 3px
 
     #line1
         position: absolute
-        top:10px
+        top:25px
         transform: rotate(0deg)
         transition: transform .5s ease, background, width
 
     #line2
         position: absolute
-        top: 30px
+        top: 45px
 
     #line3
         position: absolute
-        top: 50px
+        top: 65px
         transform: rotate(0deg)
         transition: transform .5s ease, background, width
 
     #line1.visible
-        top: 25px
+        top: 45px
         transform: rotate(45deg)
-        background: red
-        width: 50px
+        background: #000
+        width: 60px
 
     #line2.visible
         width: 0px
         height: 0
 
     #line3.visible
-        top: 25px
+        top: 45px
         transform: rotate(-45deg)
-        background: red
-        width: 50px 
+        background: #000
+        width: 60px 
 
     .mobile-menu.visible
         position: absolute
-        top: 120px
+        top:110px
         left: 60px
         display: flex
         flex-direction: column
@@ -125,6 +126,7 @@
     .nav-menu--mobile
         li
             list-style: none
+            cursor: pointer
 
     .nav-menu--mobile
         li::after
@@ -143,57 +145,66 @@
             transform: scaleX(1)
 
     .nav-look
-        position: relative
-        top: 55px
-        left: 100px
-        display: block
-        width: 40px
-        height: 40px
-        border: 1px solid #000
-        border-radius: 20px
+            position: relative
+            top: 35px
+            left: -90px
+            display: block
+            width: 40px
+            height: 40px
+            background: transparent
+            border: 1px solid #000
+            border-radius: 20px
 
     .nav-look:hover
-        border: 1px solid red
+            border: 1px solid red
 
     .nav-look
         svg
             position: relative
             width: 20px
             height: 20px
-            top: 8px
-            left: 9px
+            top: 10px
+            left: 10px
 
     .nav-look.scrolled
         svg
             position: relative
-            top: 8px
-            left: 9px
+            top: 10px
+            left: 10px
             fill: #000
 
-    .nav-look:hover.scrolled
+    .nav-look
+        span:hover.scrolled
             border: 1px solid red
 
     .nav-store
-        position: relative
-        top: 55px
-        left: -100px
-        display: block
-        width: 42px
-        height: 42px
-        background: #ffffff
-        border-radius: 20.5px
+            position: relative
+            top: 36px
+            left: -190px
+            display: block
+            width: 40px
+            height: 40px
+            border: 1px solid #000
+            background: transparent
+            border-radius: 40px
 
     .nav-store:hover
-        background: transparent
-        border: solid 1px #ffffff
+            background: transparent
+            border: solid 1px red
+
 
     .nav-store
         svg
             position: relative
-            width: 20px
-            height: 20px
-            top: 10px
-            left: 10px
+            width: 25px
+            height: 25px
+            top: 9px
+            left: 6px
+    
+    .nav-store.scroll
+        svg
+            stroke: #ffffff
+
 
 @media screen and (min-width: $layout-breakpoint-large)
 
@@ -236,6 +247,7 @@
         li
             list-style: none
             font-size: .9em
+            cursor: pointer
 
     .nav-menu
         li::after

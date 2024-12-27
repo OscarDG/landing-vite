@@ -1,33 +1,64 @@
-.banner-wrap {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 100%;
-  height: 200px;
-  background-image: url(../assets/sunset.jpg);
-  background-size: cover;
-  background-position: 0% 70%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 640px) {
+  .banner-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 200px;
+    background-image: url(../assets/sunset.jpg);
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+  }
+  .banner-icons {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .icon span {
+    color: #FBFBFB;
+  }
 }
-
-.banner-icons {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 400px;
-  height: 80px;
-}
-
-.icon {
-  width: 35px;
-  height: 35px;
-}
-
-.icon span {
-  color: #FBFBFB;
+@media screen and (min-width: 1024px) {
+  .banner-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 200px;
+    background-image: url(../assets/sunset.jpg);
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+  }
+  .banner-icons {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .icon span {
+    color: #FBFBFB;
+  }
 }/*# sourceMappingURL=banner.css.map */
