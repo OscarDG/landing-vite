@@ -10,15 +10,15 @@
             <div className="banner-icons">
                 <div className="icon">
                     <RecycleIcon />
-                    <span>Reciclado</span>
+                    <span>Recycled</span>
                 </div>
                 <div className="icon">
                     <TechIcon />
-                    <span>Tecnología</span>
+                    <span>Technology</span>
                 </div>
                 <div className="icon">
                     <FabricIcon />
-                    <span>Diseño</span>
+                    <span>Design</span>
                 </div>
             </div>
         </div>

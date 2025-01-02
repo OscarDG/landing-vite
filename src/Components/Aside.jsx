@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import FacebookIcon from '../assets/facebook.tsx'
 import InstagramIcon from '../assets/instagram.tsx'
 import TiktokIcon from '../assets/tiktok.tsx'
-import '../css/aside.css'
+import '../src/css/aside.css'
 
 export function Aside (){
 

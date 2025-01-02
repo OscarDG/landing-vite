@@ -8,17 +8,17 @@ export function Footer(){
             <span className='footer-tag'></span>
         </div>
             <div className="newsletter">
-                <h2>¡Suscríbete a nuestro boletín de noticias!</h2>
+                <h2>Subscribe to our newsletter!</h2>
                 <form className="form">
                     <input type="email" id="newsletter" value="email" />
-                        <button type="button">Suscribirte</button>
+                        <button type="button">Subscribe</button>
                 </form>
             </div>
             <div className= "contact">
-                <h2>Contacto</h2>
+                <h2>Contact</h2>
                 <p>(+57) 317-4048898</p>
-                <p>contacto@correo.com</p>
-                <p>Calle falsa 123</p>
+                <p>contact@email.com</p>
+                <p>False street 123</p>
             </div>
         </div>
     )

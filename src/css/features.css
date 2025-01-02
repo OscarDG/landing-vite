@@ -147,6 +147,7 @@
     height: 100%;
   }
   .feature-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -180,9 +181,9 @@
     height: auto;
     padding: 5px 5px 5px 0;
   }
-  .features-button {
-    position: relative;
-    top: 10px;
+  .features-btn {
+    position: absolute;
+    bottom: 0;
     left: 20px;
     border: none;
     width: 100px;
@@ -194,7 +195,7 @@
     overflow: hidden;
     z-index: 1;
   }
-  .features-button::after {
+  .features-btn::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -207,10 +208,14 @@
     transform: scaleX(0);
     transition: transform 0.5s ease-out;
   }
-  .features-button:hover::after {
+  .features-btn:hover::after {
     transform: scaleX(1);
   }
-  .features-button svg {
+  .features-btn a {
+    text-decoration: none;
+    color: #FBFBFB;
+  }
+  .features-btn svg {
     position: relative;
     top: 3px;
     left: 10px;

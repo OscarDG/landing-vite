@@ -1,5 +1,5 @@
 import '../css/features.css'
-import PlusIcon from '../assets/plus.tsx'
+import ArrowIcon from '../assets/arrow.tsx';
 import {features} from '../data/features.js'
 
 export function FeaturesCart() {
@@ -10,9 +10,9 @@ export function FeaturesCart() {
             <div className="feature-card" key={feature.id}>
                 <h2>{feature.name}</h2>
                 <p>{feature.description}</p>
-                <button className="features-button">
-                    More
-                    <PlusIcon />
+                <button className='features-btn'>
+                    <a href='/' target='_blank'>More</a>
+                    <ArrowIcon />
                 </button>
             </div>
         )

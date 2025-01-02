@@ -20,10 +20,37 @@ export const features = [
 export const collections = [
     {
         id: 1,
-        title: "¡Alta exigencia para deportistas exigentes!",
+        title: "High demands for demanding athletes!",
+        image: 'src/assets/cycling.jpg'
     },
     {
         id: 2,
-        title: "¡Lo mejor para quienes lo entregan todo",
+        title: "The best for those who give their all!",
+        image: 'src/assets/basketball.jpg'
+    },
+    {
+        id: 3,
+        title: "The best for those who give their all!",
+        image: 'src/assets/basketball.jpg'
+    },
+    {
+        id: 4,
+        title: "The best for those who give their all!",
+        image: 'src/assets/cycling.jpg'
+    },
+    {
+        id: 5,
+        title: "The best for those who give their all!",
+        image: 'src/assets/basketball.jpg'
+    },
+    {
+        id: 6,
+        title: "The best for those who give their all!",
+        image: 'src/assets/cycling.jpg'
+    },
+    {
+        id: 7,
+        title: "The best for those who give their all!",
+        image: 'src/assets/basketball.jpg'
     }
 ]
