@@ -18,7 +18,7 @@ function App() {
       <Banner />
       <Collections />
       </main>
-      <footer className="main-footer">
+      <footer className="mainFooter">
         <Footer />
       </footer>
     </>

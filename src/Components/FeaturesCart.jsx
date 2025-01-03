@@ -7,11 +7,11 @@ export function FeaturesCart() {
     const featuresChart = features.map((feature) => {
 
         return(
-            <div className="feature-card" key={feature.id}>
+            <div className="feature__card" key={feature.id}>
                 <h2>{feature.name}</h2>
                 <p>{feature.description}</p>
-                <button className='features-btn'>
-                    <a href='/' target='_blank'>More</a>
+                <button className='features__btn'>
+                    <a href='/' target='_blank' aria-label='Link for features details'>See more</a>
                     <ArrowIcon />
                 </button>
             </div>
@@ -19,7 +19,7 @@ export function FeaturesCart() {
     });
 
     return (
-        <div className="features-wrap">
+        <div className="features__wrap">
             {featuresChart}
         </div>
     )

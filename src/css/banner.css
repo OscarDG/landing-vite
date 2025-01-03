@@ -1,17 +1,17 @@
 @media screen and (max-width: 640px) {
-  .banner-wrap {
+  .banner__wrap {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
     height: 200px;
-    background-image: url(../assets/sunset.jpg);
+    background-image: url(../assets/sunset.webp);
     background-size: cover;
     background-position: 0% 70%;
     background-repeat: no-repeat;
   }
-  .banner-icons {
+  .banner__icons {
     position: absolute;
     top: 100px;
     left: 70px;
@@ -31,19 +31,19 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .banner-wrap {
+  .banner__wrap {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
     height: 200px;
-    background-image: url(../assets/sunset.jpg);
+    background-image: url(../assets/sunset.webp);
     background-size: cover;
     background-position: 0% 70%;
     background-repeat: no-repeat;
   }
-  .banner-icons {
+  .banner__icons {
     position: absolute;
     bottom: 50px;
     left: 100px;

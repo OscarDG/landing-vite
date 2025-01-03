@@ -5,9 +5,9 @@
  
  export function Banner(){
     return (
-    <section className="section banner">
-        <div className="banner-wrap">
-            <div className="banner-icons">
+    <section className="banner">
+        <div className="banner__wrap" aria-label='Banner image of a man in a mountain'>
+            <div className="banner__icons">
                 <div className="icon">
                     <RecycleIcon />
                     <span>Recycled</span>

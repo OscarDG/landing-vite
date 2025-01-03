@@ -37,38 +37,38 @@ const menuLinks = ['MEN´S', 'WOMEN´S', 'KIDS', 'SHOES', 'EQUIPMENT']
 const linksWrap = menuLinks.map((link) => {
     return(
         <li key={menuLinks.indexOf(link)}>
-            <a className={`nav-menu--link ${sticky ? 'scrolled' : ''}`} target="_blank">{link}</a>
+            <a className={`navmenu__link ${sticky ? 'navmenu__link--scrolled' : ''}`} href={`/landing-vite/${link}`} target="_blank">{link}</a>
         </li>
     )
 })
 
     return (
-    <header className={`${sticky ? 'scrolled' : ''}`}>
-        <nav className="main-nav">
-            <div className='mobile-nav-button' onClick={handleClick}>
-                <div className={`nav-button--wrap ${visible ? 'visible' : ''}`}>
+    <header className={`${sticky ? 'header--scrolled' : ''}`}>
+        <nav className="mainNav">
+            <div className='mobileNav__button' onClick={handleClick}>
+                <div className= 'navButton__wrap'>
                     <span className={`${visible ? 'visible' : ''}`} id='line1'></span>
                     <span className={`${visible ? 'visible' : ''}`} id='line2'></span>
                     <span className={`${visible ? 'visible' : ''}`} id='line3'></span>
                 </div>
             </div>
-            <div className={`mobile-menu ${visible ? 'visible' : ''}`}>
-                <div className='mobile-menu--wrap'>
-                    <ul className='nav-menu--mobile'>
+            <div className={`mobileMenu ${visible ? 'mobileMenu--visible' : ''}`}>
+                <div className='mobileMenu__wrap'>
+                    <ul className='navMenu__mobile'>
                         {linksWrap}
                     </ul>
 
                 </div>
             </div>
-            <ul className="nav-menu">
+            <ul className="navMenu">
                 {linksWrap}
             </ul>
-            <a className={`nav-look ${sticky ? 'scrolled' : ''}`} href="" target="_blank">
+            <a className={`navlook ${sticky ? 'navlook--scrolled' : ''}`} href="" target="_blank">
                 <span>
                    <Lookicon />
                 </span>
             </a>
-            <a className={`nav-store ${sticky ? 'scrolled' : ''}`}href="" target="_blank">
+            <a className={`navstore ${sticky ? 'navstore--scrolled' : ''}`}href="" target="_blank">
                 <span>
                     <CartIcon />
                 </span>

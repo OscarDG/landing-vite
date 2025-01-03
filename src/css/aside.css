@@ -1,5 +1,5 @@
 @media screen and (max-width: 640px) {
-  .social-aside {
+  .social__aside {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@
     height: 200px;
     z-index: 2;
   }
-  .social-wrap--list {
+  .social__wrap__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,21 +23,21 @@
     height: 180px;
     background: transparent;
   }
-  .social-wrap--list li {
+  .social__wrap__list li {
     position: relative;
     right: 20px;
     width: 30px;
     height: 30px;
   }
-  .social-wrap--list li a {
+  .social__wrap__list li a {
     cursor: pointer;
   }
-  .social-wrap--list.scrolled svg {
+  .social__wrap__list--scrolled svg {
     fill: #000;
   }
 }
 @media screen and (min-width: 1024px) {
-  .social-aside {
+  .social__aside {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -49,7 +49,7 @@
     height: 200px;
     z-index: 2;
   }
-  .social-wrap--list {
+  .social__wrap__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,16 +61,16 @@
     height: 180px;
     background: transparent;
   }
-  .social-wrap--list li {
+  .social__wrap__list li {
     position: relative;
     right: 20px;
     width: 30px;
     height: 30px;
   }
-  .social-wrap--list li a {
+  .social__wrap__list li a {
     cursor: pointer;
   }
-  .social-wrap--list.scrolled svg {
+  .social__wrap__list--scrolled svg {
     fill: #000;
   }
 }/*# sourceMappingURL=aside.css.map */

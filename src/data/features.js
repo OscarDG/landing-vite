@@ -26,31 +26,31 @@ export const collections = [
     {
         id: 2,
         title: "The best for those who give their all!",
-        image: 'src/assets/basketball.jpg'
+        image: 'src/assets/basketball.webp'
     },
     {
         id: 3,
         title: "The best for those who give their all!",
-        image: 'src/assets/basketball.jpg'
+        image: 'src/assets/basketball.webp'
     },
     {
         id: 4,
         title: "The best for those who give their all!",
-        image: 'src/assets/cycling.jpg'
+        image: 'src/assets/cycling.webp'
     },
     {
         id: 5,
         title: "The best for those who give their all!",
-        image: 'src/assets/basketball.jpg'
+        image: 'src/assets/basketball.webp'
     },
     {
         id: 6,
         title: "The best for those who give their all!",
-        image: 'src/assets/cycling.jpg'
+        image: 'src/assets/cycling.webp'
     },
     {
         id: 7,
         title: "The best for those who give their all!",
-        image: 'src/assets/basketball.jpg'
+        image: 'src/assets/basketball.webp'
     }
 ]

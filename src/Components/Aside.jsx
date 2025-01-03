@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import FacebookIcon from '../assets/facebook.tsx'
 import InstagramIcon from '../assets/instagram.tsx'
 import TiktokIcon from '../assets/tiktok.tsx'
-import '../src/css/aside.css'
+import '../css/aside.css'
 
 export function Aside (){
 
@@ -24,11 +24,11 @@ export function Aside (){
     }, []);
 
     return(
-<aside className="social-aside">
-            <div className="social-wrap">
-                <ul className={`social-wrap--list ${sticky ? 'scrolled' : ''}`}>
+<aside className="social__aside">
+            <div className="social__wrap">
+                <ul className={`social__wrap__list ${sticky ? 'social__wrap__list--scrolled' : ''}`}>
                     <li>
-                        <a href="" target="_blank">
+                        <a href="" target="_blank" aria-label='link for social networks'>
                             <FacebookIcon />
                         </a>
                     </li>

@@ -9,7 +9,7 @@
     height: auto;
     margin-bottom: 150px;
   }
-  .features-image {
+  .features__image {
     position: relative;
     top: 50px;
     left: 0px;
@@ -21,13 +21,13 @@
     height: 200px;
     z-index: -1;
   }
-  .features-image img {
+  .features__image img {
     width: 250px;
     height: 250px;
     max-height: 100%;
     filter: drop-shadow(3px 2px 5px #000);
   }
-  .features-wrap {
+  .features__wrap {
     position: relative;
     top: 90px;
     left: 0px;
@@ -41,7 +41,7 @@
     height: auto;
     max-height: 100%;
   }
-  .feature-card {
+  .feature__card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -50,7 +50,7 @@
     border-radius: 10px;
     z-index: 1;
   }
-  .feature-card h2 {
+  .feature__card h2 {
     position: relative;
     left: 20px;
     width: 200px;
@@ -58,7 +58,7 @@
     text-align: left;
     color: #9999A1;
   }
-  .feature-card h2::after {
+  .feature__card h2::after {
     display: block;
     position: relative;
     top: 10px;
@@ -67,7 +67,7 @@
     height: 2px;
     background: red;
   }
-  .feature-card p {
+  .feature__card p {
     position: relative;
     top: 5px;
     left: 20px;
@@ -75,7 +75,7 @@
     height: auto;
     padding: 5px 5px 5px 0;
   }
-  .features-button {
+  .features__button {
     position: relative;
     top: 10px;
     left: 20px;
@@ -89,7 +89,7 @@
     overflow: hidden;
     z-index: 1;
   }
-  .features-button::after {
+  .features__button::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -102,10 +102,10 @@
     transform: scaleX(0);
     transition: transform 0.5s ease-out;
   }
-  .features-button:hover::after {
+  .features__button:hover::after {
     transform: scaleX(1);
   }
-  .features-button svg {
+  .features__button svg {
     position: relative;
     top: 3px;
     left: 10px;
@@ -121,7 +121,7 @@
     width: 100%;
     height: 100vh;
   }
-  .features-image {
+  .features__image {
     position: absolute;
     left: 20px;
     display: flex;
@@ -131,12 +131,12 @@
     height: 400px;
     z-index: -1;
   }
-  .features-image img {
+  .features__image img {
     width: 350px;
     height: 450px;
     filter: drop-shadow(3px 2px 5px #000);
   }
-  .features-wrap {
+  .features__wrap {
     position: relative;
     left: 80px;
     display: flex;
@@ -146,7 +146,7 @@
     width: 80%;
     height: 100%;
   }
-  .feature-card {
+  .feature__card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@
     border-radius: 10px;
     z-index: 1;
   }
-  .feature-card h2 {
+  .feature__card h2 {
     position: relative;
     left: 20px;
     width: 200px;
@@ -164,7 +164,7 @@
     text-align: left;
     color: #9999A1;
   }
-  .feature-card h2::after {
+  .feature__card h2::after {
     display: block;
     position: relative;
     top: 10px;
@@ -173,7 +173,7 @@
     height: 2px;
     background: red;
   }
-  .feature-card p {
+  .feature__card p {
     position: relative;
     top: 5px;
     left: 20px;
@@ -181,7 +181,7 @@
     height: auto;
     padding: 5px 5px 5px 0;
   }
-  .features-btn {
+  .features__btn {
     position: absolute;
     bottom: 0;
     left: 20px;
@@ -195,7 +195,7 @@
     overflow: hidden;
     z-index: 1;
   }
-  .features-btn::after {
+  .features__btn::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -208,14 +208,14 @@
     transform: scaleX(0);
     transition: transform 0.5s ease-out;
   }
-  .features-btn:hover::after {
+  .features__btn:hover::after {
     transform: scaleX(1);
   }
-  .features-btn a {
+  .features__btn a {
     text-decoration: none;
     color: #FBFBFB;
   }
-  .features-btn svg {
+  .features__btn svg {
     position: relative;
     top: 3px;
     left: 10px;

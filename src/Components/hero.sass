@@ -1,42 +1,50 @@
 @import '../_variables'
 
 @media screen and ( max-width: $layout-breakpoint-small)    
-    .main-hero
+    .mainhero
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
         width: 100%
         height: 100vh
-        background-image: url(src/assets/mountain.jpg)
+        background-image: url(src/assets/mountain.webp)
         background-size: cover
         background-repeat: no-repeat
         background-position: -250px
 
-    .main-hero--wrap
+    .mainhero__wrap
         position: relative
         z-index: 2
-        text-align: center
-        font-size: 2.3em
-        color: #ffffff
+
+    
+    .mainhero__wrap
+        h1
+            text-align: center
+            font-size: 2.3em
+            color: #ffffff
+
 
 @media screen and (min-width: 1024px)
 
-    .main-hero
+    .mainhero
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
         width: 100%
         height: 100vh
-        background-image: url(src/assets/mountain.jpg)
+        background-image: url(src/assets/mountain.webp)
         background-size: cover
         background-repeat: no-repeat
-        background-attachment: fixed
+        background-attachment: fixed    
 
-    .main-hero--wrap
+    .main-hero__wrap
         position: relative
         z-index: 2
-        text-align: center
-        font-size: 3em
-        color: #ffffff
+
+    .mainhero__wrap
+        h1
+            text-align: center
+            font-size: 2.3em
+            color: #ffffff
