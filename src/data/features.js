@@ -3,17 +3,23 @@ export const features = [
     {
         id: 1,
         name: "Feature One",
-        description: "This is a product feature that appears in the second section of the web page"
+        description: "This is a product feature that appears in the second section of the web page",
+        image: "./src/assets/break-dancer-doing.webp",
+        tag: "dance"
     },
     {
         id: 2,
         name: "Feature Two",
-        description: "This is a product feature that appears in the second section of the web page"
+        description: "This is a product feature that appears in the second section of the web page",
+        image: "./src/assets/women_bicycle.webp",
+        tag: 'cycle'
     },
     {
         id: 3,
         name: "Feature Three",
-        description: "This is a product feature that appears in the second section of the web page"
+        description: "This is a product feature that appears in the second section of the web page",
+        image:"./src/assets/man_joy.webp",
+        tag: "joy"
     }
 ]
 

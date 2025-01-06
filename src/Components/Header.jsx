@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import CartIcon from '../assets/cart.tsx'
-import Lookicon from '../assets/look.tsx'
 import '../css/Header.css'
 
 export function Header(){
@@ -63,11 +62,6 @@ const linksWrap = menuLinks.map((link) => {
             <ul className="navMenu">
                 {linksWrap}
             </ul>
-            <a className={`navlook ${sticky ? 'navlook--scrolled' : ''}`} href="" target="_blank">
-                <span>
-                   <Lookicon />
-                </span>
-            </a>
             <a className={`navstore ${sticky ? 'navstore--scrolled' : ''}`}href="" target="_blank">
                 <span>
                     <CartIcon />

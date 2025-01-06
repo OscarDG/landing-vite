@@ -1,12 +1,12 @@
 import '../css/footer.css'
+import FacebookIcon from '../assets/facebook.tsx'
+import InstagramIcon from '../assets/instagram.tsx'
+import TiktokIcon from '../assets/tiktok.tsx'
 
 export function Footer(){
 
     return(
         <div className="footer__wrap">
-        <div className="footerTag__Wrap">
-            <span className='footer__tag'></span>
-        </div>
             <div className="newsletter">
                 <h2>Subscribe to our newsletter!</h2>
                 <form className="newsletter__form">
@@ -14,11 +14,13 @@ export function Footer(){
                         <button type="button">Subscribe</button>
                 </form>
             </div>
-            <div className= "newsletter__contact">
-                <h2>Contact</h2>
-                <p>(+57) 317-4048898</p>
-                <p>contact@email.com</p>
-                <p>False street 123</p>
+            <div className= "footer__social">
+                <a href= '/' rel='Facebook link' target='_blank' className='footer__social--facebook'><FacebookIcon/></a>
+                <a href= '/' rel='Instagram link' target='_blank' className='footer__social--instagram'><InstagramIcon/></a>
+                <a href= '/' rel='TikTok link' target='_blank' className='footer__social--tiktok'><TiktokIcon/></a>
+            </div>
+            <div className='footer__copy'>
+                <p>Copyright 2023. All rights reserved.</p>
             </div>
         </div>
     )
