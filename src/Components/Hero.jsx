@@ -9,7 +9,7 @@ export function Hero(){
             </div>
             <div className='cta__hero'>
                 <button className='cta__hero__button'>
-                    <a href='/' target='_blank'>Watch products</a>
+                    <a href='/landing-vite/STORE'>Watch products</a>
                 </button>
             </div>
         </section>

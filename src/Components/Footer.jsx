@@ -20,7 +20,7 @@ export function Footer(){
                 <a href= '/' rel='TikTok link' target='_blank' className='footer__social--tiktok'><TiktokIcon/></a>
             </div>
             <div className='footer__copy'>
-                <p>Copyright 2023. All rights reserved.</p>
+                <p>UI Design 2023. All rights reserved.</p>
             </div>
         </div>
     )

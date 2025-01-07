@@ -1,27 +1,18 @@
-import { Header } from './Components/Header'
-import { Hero } from './Components/Hero'
-import './App.css'
-import { Aside } from './Components/Aside'
-import { Features } from './Components/Features'
-import { Banner } from './Components/Banner'
-import { Collections } from './Components/Collections'
-import { Footer } from './Components/Footer'
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Home } from './Components/Home';
+import { Store } from './Components/Store';
+import '../src/css/App.css'
 
 function App() {
+
   return (
-    <>
-      <Header />
-      <main>
-      <Hero />
-      <Aside />
-      <Features />
-      <Banner />
-      <Collections />
-      </main>
-      <footer className="mainFooter">
-        <Footer />
-      </footer>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path= '/landing-vite/' element={<Home />}/>
+        <Route path='/landing-vite/STORE' element={<Store />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -31,12 +31,12 @@ const handleClick = () => {
         }
     };
 
-const menuLinks = ['MEN´S', 'WOMEN´S', 'KIDS', 'SHOES', 'EQUIPMENT']
+const menuLinks = ['MEN´S', 'WOMEN´S', 'KIDS','EQUIPMENT', 'STORE']
 
 const linksWrap = menuLinks.map((link) => {
     return(
         <li key={menuLinks.indexOf(link)}>
-            <a className={`navmenu__link ${sticky ? 'navmenu__link--scrolled' : ''}`} href={`/landing-vite/${link}`} target="_blank">{link}</a>
+            <a className={`navmenu__link ${sticky ? 'navmenu__link--scrolled' : ''}`} href={`/landing-vite/${link}`}>{link}</a>
         </li>
     )
 })
@@ -64,7 +64,7 @@ const linksWrap = menuLinks.map((link) => {
             </ul>
             <a className={`navstore ${sticky ? 'navstore--scrolled' : ''}`}href="" target="_blank">
                 <span>
-                    <CartIcon />
+                    <CartIcon width={'30px'} height={'30px'} stroke={'#ffffff'}/>
                 </span>
             </a>
         </nav>
