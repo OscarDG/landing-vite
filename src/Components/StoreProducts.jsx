@@ -1,5 +1,5 @@
 import '../css/App.css'
-import ArrowIcon from '../assets/arrow';
+import ArrowIcon from '../assets/arrow'
 
 export function StoreProducts({products}){
 

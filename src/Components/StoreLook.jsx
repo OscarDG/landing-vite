@@ -18,9 +18,9 @@ export function StoreLook(){
                         </span>
                     </li>
                     <li className='navbar__store'>
-                        <button className='navbar__store__button'>
+                        <a href='/landing-vite/cart' className='navbar__store__button'>
                             <CartIcon width={'30px'} height={'30px'} stroke={'#ffffff'}/>
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </nav>

@@ -2,17 +2,19 @@ import { createContext, useState } from "react";
 
 export const FilterContext = createContext()
 
-export function FilterProvider ({children}){
+export function FilterProvider ({children}) {
 
-    const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
+    const [filter, setFilter] = useState({
+        category: 'All',
+    });
 
-    console.log(selectedCategory)
     return(
         <FilterContext.Provider value={{
-            selectedCategory,
-            setSelectedCategory
+            filter,
+            setFilter
         }}>
             {children}
         </FilterContext.Provider>
     )
+
 }

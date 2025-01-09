@@ -7,7 +7,7 @@ export const products = [
         "price": 10.99,
         "description": "This is product 1",
         "image": "./src/assets/skates.webp",
-        "category": "gadgets",
+        "category": "Gadgets",
         "available": true
     },
     {
@@ -17,7 +17,7 @@ export const products = [
         "price": 9.99,
         "description": "This is product 2",
         "image": "./src/assets/byclicle.webp",
-        "category": "clothes",
+        "category": "Clothes",
         "available": true
     },
     {
@@ -27,7 +27,7 @@ export const products = [
         "price": 12.99,
         "description": "This is product 3",
         "image": "./src/assets/sports.webp",
-        "category": "wearable",
+        "category": "Wearables",
         "available": true
     },
     {
@@ -37,7 +37,7 @@ export const products = [
         "price": 9.99,
         "description": "This is product 4",
         "image": "./src/assets/byclicle.webp",
-        "category": "gadgets",
+        "category": "Gadgets",
         "available": true
     }
 ]

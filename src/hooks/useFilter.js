@@ -1,18 +1,18 @@
 import { useContext } from "react";
-import { FilterContext } from "../contexts/filter.jsx";
+import { FilterContext } from '../contexts/filterProvider.jsx'
 
-export function UseFilter (){
+export function useFilter(){
 
-    const {filters, setFilters} = useContext(FilterContext)
+    const {filter, setFilter} = useContext(FilterContext)
 
     const filterProducts = (products) => {
         return products.filter(product => {
             return(
-                filters.category === 'all' || product.category === filters.category
+                filter.category === 'all' || product.category === filter.category
             )
         })
     }
 
-    return (filters, filterProducts, setFilters)
+    return (filter, filterProducts, setFilter)
 }
 
