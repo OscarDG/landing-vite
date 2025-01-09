@@ -2,31 +2,22 @@ import { StoreCategories } from "./StoreCategories"
 import { StoreLook } from "./StoreLook"
 import { StoreProducts } from "./StoreProducts"
 import { StoreNav } from "./StoreNav"
-import {products as initialProducts} from '../data/products.js'
 import { useState } from "react"
+import {products as initialProducts} from '../data/products.js'
+import { useFilter } from "../hooks/useFilters.js"
 
 export function Store(){
 
     const [products] = useState(initialProducts)
 
-    const [filters, setFilters] = useState({
-        category: 'All',
-    });
-
-    const filterProducts = (products) => {
-        return products.filter(product => {
-            return(
-                filters.category === 'All' || product.category === filters.category
-            )
-        })
-    }
+    const {filterProducts} = useFilter()
 
     const filteredProducts = filterProducts(products)
 
-    return(
+      return(
         <>
             <StoreLook />
-            <StoreCategories filters={setFilters}/>
+            <StoreCategories />
             <StoreProducts products = {filteredProducts}/>
             <StoreNav />
         </>

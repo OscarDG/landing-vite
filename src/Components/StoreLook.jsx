@@ -2,8 +2,18 @@ import '../css/Store.css'
 import '../css/App.css'
 import LookIcon from '../assets/look.tsx'
 import CartIcon from '../assets/cart.tsx'
+import { useFilter } from '../hooks/useFilters.js'
 
 export function StoreLook(){
+
+    const {setFilters} = useFilter()
+
+    const handleChange = (event) => {
+        setFilters(prevState => ({
+            ...prevState,
+            name: event.target.value
+        }))
+    }
 
     return (
         <header className='store__header'>
@@ -11,7 +21,7 @@ export function StoreLook(){
                 <ul className='header__navbar'>
                     <li className='header__navbar__item'>
                         <div className='navbar__lookbar'>
-                            <input type='text' name='lookup' placeholder='Buscar' id='lookup'></input>
+                            <input type='text' name='lookup' placeholder='Buscar' id='lookup' onChange={handleChange}></input>
                         </div>
                         <span className='lookbar__icon'>
                             <LookIcon />
