@@ -10,7 +10,7 @@ export function Footer(){
             <div className="newsletter">
                 <h2>Subscribe to our newsletter!</h2>
                 <form className="newsletter__form">
-                    <input type="email" id="newsletter" value="email" />
+                    <input type="email" id="newsletter" placeholder="email" />
                         <button type="button">Subscribe</button>
                 </form>
             </div>

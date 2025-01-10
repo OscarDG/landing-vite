@@ -39,5 +39,26 @@ export const products = [
         "image": "./src/assets/byclicle.webp",
         "category": "Gadgets",
         "available": true
+    },
+    {
+        "id": 5,
+        "name": "Product 5",
+        "brand": "Shimano",
+        "price": 10.99,
+        "description": "This is product 5",
+        "image": "./src/assets/skates.webp",
+        "category": "Clothes",
+        "available": true
+    },
+    {
+        "id": 6,
+        "name": "Product 6",
+        "brand": "Canariam",
+        "price": 12.99,
+        "description": "This is product 6",
+        "image": "./src/assets/byclicle.webp",
+        "category": "Wearables",
+        "available": true
+
     }
 ]

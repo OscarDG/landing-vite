@@ -36,8 +36,8 @@ export function Filter (){
             className={`categories__list__${category.name} ${active === category.id ? 'active' : ''}`}>
                 <button className='categories__button' type='button' id={categoryId} value={category.name} onClick={ ()=> handleClick(category.id, category.name)}>
                     {category.icon}
-                    <label htmlFor={categoryId}>{category.name}</label>
                 </button>
+                <label htmlFor={categoryId}>{category.name}</label>
             </li>
             )
         }

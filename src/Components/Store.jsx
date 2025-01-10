@@ -5,6 +5,7 @@ import { StoreNav } from "./StoreNav"
 import { useState } from "react"
 import {products as initialProducts} from '../data/products.js'
 import { useFilter } from "../hooks/useFilters.js"
+import { ActiveProvider } from "../contexts/activeContext.jsx"
 
 export function Store(){
 
@@ -18,7 +19,9 @@ export function Store(){
         <>
             <StoreLook />
             <StoreCategories />
-            <StoreProducts products = {filteredProducts}/>
+            <ActiveProvider>
+                <StoreProducts products = {filteredProducts}/>
+            </ActiveProvider>
             <StoreNav />
         </>
     )

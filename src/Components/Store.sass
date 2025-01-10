@@ -9,8 +9,8 @@
         justify-content: center
         align-items: center
         width: 100%
-        height: 80px
-        margin-bottom: 20px
+        height: 70px
+        margin-bottom: 0px
 
     .store__header__nav
         position: absolute
@@ -105,7 +105,7 @@
         justify-content: center
         align-items: center
         width: 100%
-        height: 70px
+        height: 60px
     
     .categories__wrap
         position: absolute
@@ -148,8 +148,12 @@
             background-color: transparent
             cursor: pointer
             width: 70px
-            height: 50px
+            height: 35px
             z-index: 3
+
+    .categories__list
+        label
+            font-size: .8em
 
     .categories__list__All.active::before
         position: absolute
@@ -214,14 +218,14 @@
 
     .StoreItems__wrap
         position: relative
-        top: 20px
+        top: 18px
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: center
         gap: 20px
         width: 95%
-        height: 368px
+        height: 402px
         padding: 0px 0 20px 0
         overflow-y: auto
 
@@ -294,6 +298,7 @@
         border-radius: 4px
         text-decoration: none
         color: $main-white
+        cursor: pointer
 
     .ItemsCard__button
         span
@@ -313,14 +318,20 @@
         justify-content: center
         align-items: center
         width: 100%
+        height: 80px
         box-shadow: 0px 0px 3px #000
+        padding: 0
+        margin: 0
 
     .storeNav__container
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: flex-start
         align-items: center
         width: 100%
+        height: 70px
+        margin: 0
+        padding: 0
     
     .storeNav__items
         display: flex

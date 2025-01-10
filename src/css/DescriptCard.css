@@ -1,0 +1,146 @@
+.description__card {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  height: 450px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #FBFBFB;
+  z-index: 3;
+}
+
+.description__card.active {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  height: 450px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #FBFBFB;
+  z-index: 3;
+}
+
+.card__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card__wrap img {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  display: flex;
+  width: 240px;
+  height: 180px;
+  border-radius: 4px;
+  filter: brightness(80%);
+}
+
+.desc__card__title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  justify-items: flex-start;
+  left: 18px;
+  bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+  height: 60px;
+}
+
+.card__title__text {
+  width: 100%;
+  height: 15px;
+  padding: 0;
+  margin: 0 0 8px;
+  font-size: 1.2em;
+}
+
+.desc__card_subtitle {
+  width: 100%;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.desc__card__price {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 28px;
+  background: #F45B69;
+  border-radius: 4px;
+  color: #FBFBFB;
+}
+
+.product__description {
+  position: absolute;
+  bottom: 75px;
+  left: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.product__description-text {
+  padding: 0;
+  margin: 0;
+  font-size: 0.75em;
+}
+
+.card__btns {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 10px;
+  left: 60px;
+  width: 60%;
+  height: 40px;
+}
+
+.add__btn {
+  width: 96px;
+  height: 37px;
+  border: 0;
+  border-radius: 4px;
+  background: #98E990;
+  color: #FBFBFB;
+  font-size: 0.7em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 100%;
+  background: #F45B69;
+  color: #FBFBFB;
+  cursor: pointer;
+}/*# sourceMappingURL=DescriptCard.css.map */
