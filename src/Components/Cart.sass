@@ -8,7 +8,8 @@
         justify-content: center
         align-items: center
         width: 100%
-        height: 100px
+        height: 70px
+        margin: 0
 
     .cart__header__nav
         position: absolute
@@ -17,7 +18,7 @@
         justify-content: center
         align-items: center
         width: 100%
-        height: 80%
+        height: 100%
         border-bottom: solid 1px #000
 
     .navbar
@@ -72,21 +73,125 @@
         align-items: center
         width: 40px
         height: 40px
-    
-    .cart__button
+
+    .Cart__container
         position: absolute
-        right: 30px
-        width: 25px
-        height: 25px
+        top: 5px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        background: $main-white
+        width: 350px
+        height: 500px
+        border: solid 1px 
+        border-radius: 4px
+        box-shadow: 0px 0px 2px
+        padding: 0
+        margin: 0
+        z-index: 3
+
+    .Cart__items__added
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        width: 100%
+        height: 100%        
+
+    .Cart__added__list
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 98%
+        height: 95%
+        overflow-y: auto
+
+    .cart__item
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        width: 270px
+        height: 300px
+        border: 1px solid
+        border-radius: 4px
+        
+
+    .cart__item
+        img
+            position: absolute
+            top: 10px
+            width: 150px
+            height: 150px
+            border-radius: 4px
+
+    .cart__item
+        span
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            top: 10px
+            right: 10px
+            width: 25px
+            height: 25px
+            border-radius: 50px
+            background: $main-red
+            color: $main-white
+
+    .card__item__add
+            position: absolute
+            left: 70px
+            bottom: 10px
+            width: 40px
+            height: 30px
+            border: 0
+            border-radius: 4px
+            cursor: pointer
+            background: $main-green
+
+    .card__item__remove
+            position: absolute
+            right: 70px
+            bottom: 10px
+            width: 40px
+            height: 30px
+            border: 0
+            border-radius: 4px
+            cursor: pointer
+            background: $main-green
+
+    .cart__item__title
+        position: absolute
+        top:150px
+        width: 120px
+        height: 20px
+
+    .card__item__brand
+        position: absolute
+        top: 185px
+
+    .card__item__price
+        position: absolute
+        top: 210px
+
+    .Clear__cart__btn
+        position: absolute
+        bottom: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 80px
+        height: 30px
         border: 0
-        border-radius: 50%
+        border-radius: 4px
         background: $main-red
+        color: $main-white
         cursor: pointer
 
-    .cart__button
-        svg
-            position: absolute 
-            top: 5px
-            right: 5px   
+
 
 @media screen and (min-width: $layout-breakpoint-large)

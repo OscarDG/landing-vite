@@ -1,4 +1,3 @@
-import CartIcon from "../assets/cart.tsx"
 import ArrowIcon from "../assets/arrow.tsx"
 import '../css/Cart.css'
 
@@ -12,11 +11,6 @@ export function CartHeader(){
                         <span>
                             <ArrowIcon />
                         </span>
-                    </li>
-                    <li className="navbar__cart">
-                        <button className="cart__button">
-                            <CartIcon width={'15px'} height={'15px'} stroke={'#ffffff'}/>
-                        </button>
                     </li>
                 </ul>
             </nav>

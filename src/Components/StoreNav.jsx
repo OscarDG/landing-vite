@@ -2,7 +2,7 @@ import { HomeIcon } from "../assets/home.tsx"
 import CartIcon from "../assets/cart.tsx"
 import { HeartIcon } from "../assets/Heart.tsx"
 
-export function StoreNav({filters}){
+export function StoreNav(){
     return (
         <section className="storeNav">
             <nav className="storeNav__container">
@@ -26,11 +26,6 @@ export function StoreNav({filters}){
                         </li>
                     </a>
                 </ul>
-                <span>
-                    {
-                        JSON.stringify(filters, null, 2)
-                    }
-                </span>
             </nav>
         </section>
     )

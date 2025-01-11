@@ -5,7 +5,7 @@ import { StoreNav } from "./StoreNav"
 import { useState } from "react"
 import {products as initialProducts} from '../data/products.js'
 import { useFilter } from "../hooks/useFilters.js"
-import { ActiveProvider } from "../contexts/activeContext.jsx"
+import { CartProvider } from "../contexts/CartContext.jsx"
 
 export function Store(){
 
@@ -16,13 +16,11 @@ export function Store(){
     const filteredProducts = filterProducts(products)
 
       return(
-        <>
+        <CartProvider>
             <StoreLook />
             <StoreCategories />
-            <ActiveProvider>
-                <StoreProducts products = {filteredProducts}/>
-            </ActiveProvider>
+            <StoreProducts products={filteredProducts} />
             <StoreNav />
-        </>
+        </CartProvider>
     )
 };
