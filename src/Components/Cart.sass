@@ -1,25 +1,64 @@
 @import '../_variables'
 
 @media screen and ( max-width: $layout-breakpoint-small)
-    .cart__header
+
+    .Cart__container
+        position: absolute
+        top: 10px
+        display: none
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        background: $main-white
+        width: 380px
+        height: 470px
+        border: solid 1px 
+        border-radius: 4px
+        box-shadow: 0px 0px 2px
+        padding: 0
+        margin: 0
+        z-index: 3
+
+    .Cart__container.active
+        position: absolute
+        top: 10px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        background: $main-white
+        width: 380px
+        height: 470px
+        border: solid 1px 
+        border-radius: 4px
+        box-shadow: 0px 0px 2px
+        padding: 0
+        margin: 0
+        z-index: 3
+
+    .Cart__container__wrap
         position: relative
+        width: 100%
+        height: 100%
+
+    .cart__header
+        position: absolute
+        top: 0
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
         width: 100%
-        height: 70px
-        margin: 0
+        height: 50px
+        border-bottom: solid 1px #000
 
     .cart__header__nav
-        position: absolute
         display: flex
         flex-direction: row
         justify-content: center
         align-items: center
         width: 100%
         height: 100%
-        border-bottom: solid 1px #000
 
     .navbar
         position: absolute
@@ -29,6 +68,7 @@
         align-items: center
         width: 100%
         height: 100%
+        background: $main-white
         padding: 0px
 
 
@@ -64,55 +104,36 @@
             position: absolute
             top: 12px
             left: 25px
-            transform: rotate(180deg)
-
-    .navbar__cart
-        position: relative
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 40px
-        height: 40px
-
-    .Cart__container
-        position: absolute
-        top: 5px
-        display: flex
-        flex-direction: column
-        justify-content: flex-start
-        align-items: center
-        background: $main-white
-        width: 350px
-        height: 500px
-        border: solid 1px 
-        border-radius: 4px
-        box-shadow: 0px 0px 2px
-        padding: 0
-        margin: 0
-        z-index: 3
+            transform: rotate(180deg) 
 
     .Cart__items__added
+        position: absolute
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: center
         width: 100%
-        height: 100%        
+        height: 90%
+        overflow-y: auto
+        background: $main-white
 
     .Cart__added__list
-        position: relative
+        position: absolute
+        top: 50px
         display: flex
         flex-direction: column
-        justify-content: center
-        width: 98%
-        height: 95%
-        overflow-y: auto
+        justify-content: flex-start
+        align-items: center
+        gap: 10px
+        padding: 0
+        width: 100%
+        height: auto
 
     .cart__item
         position: relative
         display: flex
         flex-direction: column
-        justify-content: flex-start
+        justify-content: center
         align-items: center
         width: 270px
         height: 300px
@@ -144,7 +165,7 @@
 
     .card__item__add
             position: absolute
-            left: 70px
+            right: 70px
             bottom: 10px
             width: 40px
             height: 30px
@@ -153,9 +174,16 @@
             cursor: pointer
             background: $main-green
 
+    .cart__empty
+        position: absolute
+        top: 200px
+        display: flex
+        justify-content: center
+        align-items: center
+
     .card__item__remove
             position: absolute
-            right: 70px
+            left: 70px
             bottom: 10px
             width: 40px
             height: 30px
@@ -178,9 +206,16 @@
         position: absolute
         top: 210px
 
-    .Clear__cart__btn
+    .cart__btn__wrap
         position: absolute
-        bottom: 20px
+        bottom: 0px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 90%
+        height: 50px
+
+    .Clear__cart__btn
         display: flex
         justify-content: center
         align-items: center
@@ -189,6 +224,18 @@
         border: 0
         border-radius: 4px
         background: $main-red
+        color: $main-white
+        cursor: pointer
+
+    .Checkout__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 80px
+        height: 30px
+        border: 0
+        border-radius: 4px
+        background: $main-green
         color: $main-white
         cursor: pointer
 

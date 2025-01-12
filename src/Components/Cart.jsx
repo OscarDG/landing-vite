@@ -14,8 +14,8 @@ export function Cart(){
                     <p className='card__item__brand'>{brand}</p>
                     <p className='card__item__price'>Total: ${price * quantity}</p>
                     <span>{quantity}</span>
-                    <button className='card__item__add' onClick={addToCart}>+</button>
                     <button className='card__item__remove' onClick={removeFromCart}>-</button>
+                    <button className='card__item__add' onClick={addToCart}>+</button>
                 </li>
             )
         }
@@ -24,6 +24,8 @@ export function Cart(){
         <>
             <CartHeader />
             <section className="Cart__items__added">
+            {
+                cart.length >= 1 ?
                 <ul className='Cart__added__list'>
                 {cart.map(product => (
                     <CartItem 
@@ -34,7 +36,11 @@ export function Cart(){
                     />
                 ))}
                 </ul>
-               <button className= 'Clear__cart__btn' onClick={clearCart}>Clear Cart</button>
+                :
+                <div className='cart__empty'>
+                    <p >Your cart is empty</p>
+                </div>
+            }
             </section>
         </>
     )

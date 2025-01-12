@@ -6,11 +6,11 @@ import { motion } from 'motion/react';
 import { useCart } from '../hooks/useCart';
 import { Cart } from '../Components/Cart.jsx';
 
-export function StoreProducts ({products}){
+export function StoreProducts ({products, state}){
 
-    const {removeFromCart, addToCart, cart} = useCart()
+    const {removeFromCart, addToCart, cart, clearCart} = useCart()
 
-    const checkProductsInCart = product => {
+    const checkProductsInCart = (product) => {
         return cart.some(item => item.id === product.id)
     }
 
@@ -29,6 +29,7 @@ export function StoreProducts ({products}){
         setActive('')
     }
 
+    console.log(products.length)
 
 const productsList = products.map((product, index) => {
         return(
@@ -44,16 +45,28 @@ const productsList = products.map((product, index) => {
             </div>
         )
     }
-);
+)
+
+
+
 const isProductInCart = checkProductsInCart(products[position])
     return(
         <>
             <section className="StoreItems">
                 <div className="StoreItems__wrap">
-                    {productsList}
+                 {
+                    products.length > 0 ? productsList : <div>No products</div>
+                 }
+                    
                 </div>
-                <div className='Cart__container'>
-                    <Cart/>
+                <div className={`Cart__container ${state}`}>
+                    <div className='Cart__container__wrap'>
+                        <Cart/>
+                    </div>
+                    <div className='cart__btn__wrap'>
+                        <button className= 'Clear__cart__btn' onClick={clearCart}>Clear Cart</button>
+                        <button className= 'Checkout__btn'>Checkout</button>
+                    </div>
                 </div>
             </section>
 

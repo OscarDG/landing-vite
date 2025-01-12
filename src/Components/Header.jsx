@@ -62,7 +62,7 @@ const linksWrap = menuLinks.map((link) => {
             <ul className="navMenu">
                 {linksWrap}
             </ul>
-            <a className={`navstore ${sticky ? 'navstore--scrolled' : ''}`}href="" target="_blank">
+            <a className={`navstore ${sticky ? 'navstore--scrolled' : ''}`} href="/landing-vite/STORE">
                 <span>
                     <CartIcon width={'30px'} height={'30px'} stroke={'#ffffff'}/>
                 </span>

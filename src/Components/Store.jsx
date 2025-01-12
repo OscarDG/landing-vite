@@ -15,11 +15,13 @@ export function Store(){
 
     const filteredProducts = filterProducts(products)
 
+    const [state, setState] = useState('Hello')
+
       return(
         <CartProvider>
-            <StoreLook />
+            <StoreLook setState={setState} state={state}/>
             <StoreCategories />
-            <StoreProducts products={filteredProducts} />
+            <StoreProducts products={filteredProducts} state={state}/>
             <StoreNav />
         </CartProvider>
     )

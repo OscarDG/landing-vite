@@ -3,8 +3,11 @@ import '../css/App.css'
 import LookIcon from '../assets/look.tsx'
 import CartIcon from '../assets/cart.tsx'
 import { useFilter } from '../hooks/useFilters.js'
+import { useCart } from '../hooks/useCart.js'
 
-export function StoreLook(){
+export function StoreLook({state, setState}){
+
+    const {cart} = useCart()
 
     const {setFilters} = useFilter()
 
@@ -13,6 +16,15 @@ export function StoreLook(){
             ...prevState,
             name: event.target.value
         }))
+    }
+
+
+    const handleState = () =>{
+        if(state === ''){
+            setState('active')
+        }else{
+            setState('')
+        }
     }
 
     return (
@@ -28,9 +40,12 @@ export function StoreLook(){
                         </span>
                     </li>
                     <li className='navbar__store'>
-                        <a href='/landing-vite/cart' className='navbar__store__button'>
+                     {
+                        cart.length > 0 ? <span>{cart.length}</span> : '' 
+                     }
+                        <button className='navbar__store__button' onClick={handleState}>
                             <CartIcon width={'30px'} height={'30px'} stroke={'#ffffff'}/>
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </nav>
