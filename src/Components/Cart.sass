@@ -4,37 +4,35 @@
 
     .Cart__container
         position: absolute
-        top: 10px
+        top: 5px
         display: none
         flex-direction: column
         justify-content: flex-start
         align-items: center
         background: $main-white
-        width: 380px
-        height: 470px
-        border: solid 1px 
-        border-radius: 4px
-        box-shadow: 0px 0px 2px
+        width: 360px
+        height: 460px
+        border-radius: 10px
+        box-shadow: 0px 0px 1px
         padding: 0
         margin: 0
-        z-index: 3
+        z-index: 2
 
     .Cart__container.active
         position: absolute
-        top: 10px
+        top: 5px
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: center
         background: $main-white
-        width: 380px
-        height: 470px
-        border: solid 1px 
-        border-radius: 4px
-        box-shadow: 0px 0px 2px
+        width: 360px
+        height: 460px
+        border-radius: 10px
+        box-shadow: 0px 0px 5px
         padding: 0
         margin: 0
-        z-index: 3
+        z-index: 2
 
     .Cart__container__wrap
         position: relative
@@ -70,7 +68,7 @@
         height: 100%
         background: $main-white
         padding: 0px
-
+        border-radius: 10px
 
     .navbar
         li
@@ -78,44 +76,65 @@
             list-style: none
 
     .navbar__back
-        position: relative
+        position: absolute
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        top: 0px
+        left: 20px
         width: 110px
-        height: 50px
+        height: 30px
+        background: $main-green
+        border-radius: 4px
 
     .navbar__back
         a
-            position: absolute
-            top: 10px
-            left: 20px
             display: flex
             justify-content: center
             align-items: center
-            width: 110px
-            height: 30px
-            padding-left: 15px
-            background: $main-green
+            order: 2
+            width: 90px
+            height: 20px
             border: 0
-            border-radius: 4px
             text-decoration: none
             color: $main-white
 
     .navbar__back
         span
-            position: absolute
-            top: 12px
-            left: 25px
-            transform: rotate(180deg) 
+            order: 1
+            margin-left: 10px
+            transform: rotate(180deg)
 
     .Cart__items__added
         position: absolute
+        top: 10px
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: center
         width: 100%
-        height: 90%
+        height: 80%
         overflow-y: auto
         background: $main-white
+        border-radius: 10px 10px 0 0
+
+    .Cart__items__added::-webkit-scrollbar
+        width: 12px
+        border: solid 1px
+        border-radius: 10px
+        
+
+    .Cart__items__added::-webkit-scrollbar-track
+        background: $main-white
+        border-radius: 10px
+        
+
+    .Cart__items__added::-webkit-scrollbar-thumb
+        box-shadow: inset 0px 0px 1px #000
+        background: #ecf0f1
+        border-radius: 7px
+        
 
     .Cart__added__list
         position: absolute
