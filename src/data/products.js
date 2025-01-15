@@ -2,7 +2,7 @@
 export const products = [
     {
         "id": 1,
-        "name": "Product 1",
+        "name": "Bicicleta Deportiva",
         "brand": "Shimano",
         "price": 10.99,
         "description": "This is product 1",
@@ -12,7 +12,7 @@ export const products = [
     },
     {
         "id": 2,
-        "name": "Product 2",
+        "name": "Patines",
         "brand": "Canariam",
         "price": 9.99,
         "description": "This is product 2",
@@ -22,7 +22,7 @@ export const products = [
     },
     {
         "id": 3,
-        "name": "Product 3",
+        "name": "Bicicleta de Montaña",
         "brand": "Shimano",
         "price": 12.99,
         "description": "This is product 3",
@@ -32,7 +32,7 @@ export const products = [
     },
     {
         "id": 4,
-        "name": "Product 4",
+        "name": "Stick de Hockey",
         "brand": "Canariam",
         "price": 9.99,
         "description": "This is product 4",
@@ -42,7 +42,7 @@ export const products = [
     },
     {
         "id": 5,
-        "name": "Product 5",
+        "name": "Patines de Hielo",
         "brand": "Shimano",
         "price": 10.99,
         "description": "This is product 5",
@@ -52,7 +52,7 @@ export const products = [
     },
     {
         "id": 6,
-        "name": "Product 6",
+        "name": "Casco para Bicicleta",
         "brand": "Canariam",
         "price": 12.99,
         "description": "This is product 6",

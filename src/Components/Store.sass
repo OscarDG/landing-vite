@@ -250,25 +250,42 @@
         font-size: 0.8em
         color: $main-white
 
-    .ItemsCard__name
+    .ItemsCard__text
         position: absolute
-        top: 0px
+        top: 15px
         left: 20px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        width: auto
+        max-width: 150px
+        min-width: 120px
+        height: auto
+        min-height: 50px
+
+
+    .ItemsCard__name
         display: flex
         justify-content: center
         align-items: center
-        width: 100px
+        width: auto
+        max-width: 160px
+        height: auto
+        padding: 2px
+        line-height: 25px
+        margin: 0
         color: $main-white
 
     .ItemsCard__brand
-        position: absolute
-        top: 20px
-        left: 30px
         display: flex
         justify-content: flex-start
         align-items: center
         margin-top: 25px
-        width: 80px
+        width: auto
+        max-width: 160px
+        min-width: 120px
+        margin: 0
         font-size: 0.9em
         color: $main-white
 

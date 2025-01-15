@@ -36,8 +36,10 @@ const productsList = products.map((product, index) => {
             <div key={product.id} className='StoreItems__card'>
                 <img src={product.image} alt={`${product.name}`}/>
                 <span className='ItemsCard__price'>${product.price}</span>
-                <h3 className='ItemsCard__name'>{product.name}</h3>
-                <p className='ItemsCard__brand'>{product.brand}</p>
+                <div className='ItemsCard__text'>
+                    <h3 className='ItemsCard__name'>{product.name}</h3>
+                    <p className='ItemsCard__brand'>{product.brand}</p>
+                </div>
                 <button className= 'ItemsCard__button' target='_blank' onClick={() => handleClickOpen(index)}>
                     <span>See more</span>
                      <ArrowIcon/>
@@ -74,8 +76,10 @@ const isProductInCart = checkProductsInCart(products[position])
                 <div className="card__wrap">
                     <img src= {products[position].image} alt='Bicicleta' className="card__image" />
                     <div className="desc__card__title">
-                        <h2 className="card__title__text">{products[position].name}</h2>
-                        <p className="desc__card_subtitle">{products[position].brand}</p>
+                        <div className='card__text'>
+                            <h2 className="card__title__text">{products[position].name}</h2>
+                            <p className="desc__card_subtitle">{products[position].brand}</p>
+                        </div>
                         <span className="desc__card__price">${products[position].price}</span>
                     </div>
                     <div className="product__description">
