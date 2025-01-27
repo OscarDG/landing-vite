@@ -119,7 +119,7 @@
             left: 5px
 
 
-@media screen and (min-width: $layout-breakpoint-large)
+@media screen and (min-width: 641px)
     
     .features
         position: relative
@@ -129,47 +129,65 @@
         align-items: center
         width: 100%
         height: 100vh
-        
-    .features__image
-        position: absolute
-        left: 20px
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 300px
-        height: 400px
-        z-index: -1
-
-    .features__image
-        img
-            width: 350px
-            height: 450px
-            filter: drop-shadow(3px 2px 5px #000)
 
     .features__wrap
-        position: relative
-        left: 80px
+        position: absolute
         display: flex
         flex-direction: row
-        justify-content: flex-end
+        justify-content: center
         align-items: center
-        width: 80%
-        height: 100%
+        flex-wrap: wrap
+        margin: 0
+        padding: 0
+        gap: 0px 50px
+        width: 100%
+        height: 90%
+        max-height: 100%
 
     .feature__card
         position: relative
         display: flex
         flex-direction: column
-        justify-content: flex-start
-        width: 300px
-        height: 230px
-        border-radius: 10px
+        justify-content: center
+        align-items: center
+        margin: 0
+        width: 350px
+        height: 470px
         z-index: 1
+        
+    .features__image
+        position: absolute
+        top: 0px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 250px
+        height: 250px
+        z-index: -1
+
+    .features__image
+        .dance
+            width: 200px
+            height: 230px
+            filter: drop-shadow(3px 2px 5px #000)
+
+    .features__image
+        .cycle
+            width: 210px
+            height: 230px
+            filter: drop-shadow(3px 2px 5px #000)
+
+    .features__image
+        .joy
+            width: 230px
+            height: 210px
+            filter: drop-shadow(3px 2px 5px #000)
 
     .feature__card
         h2
-            position: relative
-            left: 20px
+            position: absolute
+            top: 50%
+            left: 50px
             width: 200px
             font-size: 1.5em
             text-align: left
@@ -179,7 +197,7 @@
         h2::after 
             display: block
             position: relative
-            top: 10px
+            top: 5px
             content: ''
             width: 50px
             height: 2px
@@ -187,17 +205,17 @@
 
     .feature__card
         p
-            position: relative
-            top: 5px
-            left: 20px
+            position: absolute
+            top: 62%
+            left: 35px
             width: 80%
             height: auto
             padding: 5px 5px 5px 0
 
     .features__btn
         position: absolute
-        bottom: 0
-        left: 20px
+        bottom: 15px
+        left: 35px
         border: none
         width: 100px
         height: 40px

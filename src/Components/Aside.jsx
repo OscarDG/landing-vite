@@ -10,7 +10,7 @@ export function Aside (){
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 400){
+            if (window.scrollY > 220){
                 setSticky(true)
             }else{
                 setSticky(false);

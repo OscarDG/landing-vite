@@ -7,6 +7,15 @@ export function FeaturesCart() {
 
     const [scrollY, setScrollY] = useState(0);
 
+    const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize)
+    }, []);
+
     const handleScroll = () => {
         setScrollY(window.scrollY);
     };
@@ -22,8 +31,9 @@ export function FeaturesCart() {
     
     const featuresChart = features.map((feature, index) => {
 
-        const imageScroll = scrollY * .3;
-        
+        const imageScroll = scrollY *.3;
+
+        if  (width < 641 ){
         return(
             <div className="feature__card" key={feature.id}>
                 { 
@@ -51,7 +61,37 @@ export function FeaturesCart() {
                     <ArrowIcon />
                 </button>
             </div>
-        )
+        )}
+        else {
+            return(
+                <div className="feature__card" key={feature.id}>
+                { 
+                    index === 0 &&
+                        <div className='features__image'>
+                            <img className= {feature.tag} src={feature.image} alt='break dancer'/>
+                        </div>
+                }
+                { 
+                    index === 1 &&
+                        <div className='features__image'>
+                            <img className= {feature.tag} src={feature.image} alt='break dancer'/>
+                        </div>
+                }
+                {
+                    index === 2 &&
+                        <div className='features__image'>
+                            <img className= {feature.tag} src={feature.image} alt='break dancer'/>
+                        </div>
+                }
+                <h2>{feature.name}</h2>
+                <p>{feature.description}</p>
+                <button className='features__btn'>
+                    <a href='/' target='_blank' aria-label='Link for features details'>See more</a>
+                    <ArrowIcon />
+                </button>
+            </div>
+            )
+        }
     });
 
     return (

@@ -168,7 +168,7 @@
     left: 6px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 641px) {
   header {
     position: fixed;
     display: flex;
@@ -176,7 +176,7 @@
     flex-wrap: nowrap;
     align-content: center;
     width: 100%;
-    height: 60px;
+    height: 100px;
     background-color: transparent;
     transition: background-color 0s ease;
     z-index: 3;
@@ -188,34 +188,37 @@
     display: none;
   }
   .mainNav {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     justify-items: center;
-    right: 50px;
+    right: 180px;
     width: 90%;
-    height: 30px;
+    height: 90%;
   }
   .navMenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 500px;
+    align-items: center;
+    width: 600px;
     height: auto;
   }
   .navMenu li {
     list-style: none;
-    font-size: 0.9em;
+    font-size: 1.2em;
+    width: auto;
     cursor: pointer;
   }
   .navMenu li::after {
     position: relative;
-    top: -23px;
+    top: 0px;
     display: block;
     content: "";
     width: 100%;
     height: 2px;
+    border-radius: 20px;
     background: red;
     transform: scaleX(0);
     transition: transform 0.5s ease;
@@ -235,53 +238,23 @@
   .navMenu__mobile {
     display: none;
   }
-  .navlook {
-    position: relative;
-    top: 15px;
-    left: 80px;
-    display: block;
-    width: 25px;
-    height: 25px;
-    border: 1px solid #FBFBFB;
-    border-radius: 12.5px;
-  }
-  .navlook:hover {
-    border: 1px solid red;
-  }
-  .navlook--scrolled {
-    border: 1px solid #000;
-  }
-  .navlook svg {
-    position: relative;
-    top: 1px;
-    left: 6px;
-  }
-  .navlook--scrolled svg {
-    position: relative;
-    top: 1px;
-    left: 6px;
-    fill: #000;
-  }
-  .navlook--scrolled:hover {
-    border: 1px solid red;
-  }
   .navstore {
     position: relative;
-    top: 15px;
+    top: 20px;
     left: 110px;
     display: block;
-    width: 25.5px;
-    height: 25.5px;
-    background: #ffffff;
-    border-radius: 12.5px;
+    width: 45px;
+    height: 45px;
+    background: #F45B69;
+    border-radius: 22.5px;
   }
   .navstore:hover {
     background: transparent;
-    border: solid 1px #ffffff;
+    border: solid 1px #F45B69;
   }
   .navstore svg {
     position: relative;
-    top: 2px;
-    left: 6px;
+    top: 8px;
+    left: 7px;
   }
 }/*# sourceMappingURL=Header.css.map */

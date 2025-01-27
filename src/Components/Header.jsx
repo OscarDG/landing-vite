@@ -8,7 +8,7 @@ const [sticky, setSticky] = useState(false)
 
 useEffect(() => {
     const handleScroll = () => {
-        if (window.scrollY > 450){
+        if (window.scrollY > 580){
             setSticky(true)
         }else{
             setSticky(false);
