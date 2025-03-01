@@ -55,6 +55,29 @@ const isProductInCart = checkProductsInCart(products[position])
     return(
         <>
             <section className="StoreItems">
+                <motion.aside className={`description__card ${active}`} style={{display:(active === 'active' ? 'flex' : 'none')}}>
+                    <div className="card__wrap">
+                        <img src= {products[position].image} alt='Bicicleta' className="card__image" />
+                        <div className="desc__card__title">
+                            <div className='card__text'>
+                                <h2 className="card__title__text">{products[position].name}</h2>
+                                <p className="desc__card_subtitle">{products[position].brand}</p>
+                            </div>
+                            <span className="desc__card__price">${products[position].price}</span>
+                        </div>
+                        <div className="product__description">
+                            <p className="product__description-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                        </div>
+                        <div className="card__btns">
+                            <button className={`add__btn${isProductInCart ? '__remove': ''}`} onClick={() => isProductInCart ? removeFromCart(products[position]) : addToCart(products[position])}>
+                            {
+                                isProductInCart ? <span>Remove from cart</span> : <span>Add to cart</span>
+                            }
+                            </button>
+                            <span className="close__btn" onClick={handleClickClose}>X</span>
+                        </div>
+                    </div>
+                </motion.aside>
                 <div className="StoreItems__wrap">
                  {
                     products.length > 0 ? productsList : <div>No products</div>
@@ -71,30 +94,6 @@ const isProductInCart = checkProductsInCart(products[position])
                     </div>
                 </div>
             </section>
-
-            <motion.aside className={`description__card ${active}`} style={{display:(active === 'active' ? 'flex' : 'none')}}>
-                <div className="card__wrap">
-                    <img src= {products[position].image} alt='Bicicleta' className="card__image" />
-                    <div className="desc__card__title">
-                        <div className='card__text'>
-                            <h2 className="card__title__text">{products[position].name}</h2>
-                            <p className="desc__card_subtitle">{products[position].brand}</p>
-                        </div>
-                        <span className="desc__card__price">${products[position].price}</span>
-                    </div>
-                    <div className="product__description">
-                        <p className="product__description-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                    </div>
-                    <div className="card__btns">
-                        <button className={`add__btn${isProductInCart ? '__remove': ''}`} onClick={() => isProductInCart ? removeFromCart(products[position]) : addToCart(products[position])}>
-                        {
-                            isProductInCart ? <span>Remove from cart</span> : <span>Add to cart</span>
-                        }
-                        </button>
-                        <span className="close__btn" onClick={handleClickClose}>X</span>
-                    </div>
-                </div>
-            </motion.aside>
         </>
     )
 };

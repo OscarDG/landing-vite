@@ -1,0 +1,200 @@
+@media screen and (max-width: 640px) {
+  .collections {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 270px;
+  }
+  .collections h1 {
+    position: relative;
+    top: 50px;
+  }
+  .collections__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+    padding: 5px;
+  }
+  .collection__chart {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  .collection__card img {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    filter: brightness(80%);
+    z-index: 1;
+  }
+  .collection__card h3 {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 220px;
+    color: #FBFBFB;
+    z-index: 2;
+  }
+  .collection__btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 112px;
+    height: 41px;
+    border-radius: 0;
+    border: 0;
+    box-sizing: border-box;
+    background: #F45B69;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .collection__btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    text-decoration: none;
+    color: #FBFBFB;
+  }
+  .collection__btn svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+  }
+  .collections__banner {
+    position: relative;
+    top: 120px;
+    width: 100%;
+    height: 100px;
+  }
+  .collections__banner img {
+    width: 100%;
+    height: 220px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collections {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  .collections h1 {
+    position: absolute;
+    top: 10px;
+  }
+  .collections__wrap {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+    height: auto;
+    padding: 5px;
+  }
+  .collection__chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .collection__card {
+    position: relative;
+  }
+  .collection__card img {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    filter: brightness(80%);
+    z-index: 1;
+  }
+  .collection__card h2 {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 300px;
+    color: #FBFBFB;
+    z-index: 2;
+  }
+  .collection__btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 0;
+    border: 0;
+    box-sizing: border-box;
+    background: red;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .collection__btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    text-decoration: none;
+    color: #FBFBFB;
+  }
+  .collection__btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100px;
+    height: 40px;
+    background: #EB0013;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-out;
+  }
+  .collection__btn:hover::after {
+    transform: scaleX(1);
+  }
+  .collection__btn svg {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+  }
+}/*# sourceMappingURL=collections.css.map */

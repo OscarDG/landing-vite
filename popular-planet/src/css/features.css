@@ -1,0 +1,240 @@
+@media screen and (max-width: 640px) {
+  .features {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .features__wrap {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  .feature__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 340px;
+    height: 500px;
+    z-index: 1;
+  }
+  .features__image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 350px;
+    max-width: 100%;
+    height: 400px;
+  }
+  .dance {
+    width: 230px;
+    height: 300px;
+    max-height: 100%;
+    filter: drop-shadow(3px 2px 5px #000);
+  }
+  .cycle {
+    width: 270px;
+    height: 400px;
+    max-height: 100%;
+    filter: drop-shadow(3px 2px 5px #000);
+  }
+  .joy {
+    width: 300px;
+    height: 250px;
+    max-height: 100%;
+    filter: drop-shadow(3px 2px 5px #000);
+  }
+  .feature__card h2 {
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    width: 200px;
+    font-size: 1.5em;
+    text-align: left;
+    color: #9999A1;
+  }
+  .feature__card h2::after {
+    display: block;
+    position: relative;
+    top: 5px;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: red;
+  }
+  .feature__card p {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    width: 80%;
+    height: auto;
+    padding: 5px 5px 5px 0;
+  }
+  .features__btn {
+    position: absolute;
+    top: 410px;
+    left: 20px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background: #F45B69;
+    z-index: 1;
+  }
+  .features__btn a {
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  .features__btn svg {
+    position: relative;
+    top: 4px;
+    left: 5px;
+  }
+}
+@media screen and (min-width: 641px) {
+  .features {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .features__wrap {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 0px 50px;
+    width: 100%;
+    height: 90%;
+    max-height: 100%;
+  }
+  .feature__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 350px;
+    height: 470px;
+    z-index: 1;
+  }
+  .features__image {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    z-index: -1;
+  }
+  .features__image .dance {
+    width: 200px;
+    height: 230px;
+    filter: drop-shadow(3px 2px 5px #000);
+  }
+  .features__image .cycle {
+    width: 210px;
+    height: 230px;
+    filter: drop-shadow(3px 2px 5px #000);
+  }
+  .features__image .joy {
+    width: 230px;
+    height: 210px;
+    filter: drop-shadow(3px 2px 5px #000);
+  }
+  .feature__card h2 {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: 200px;
+    font-size: 1.5em;
+    text-align: left;
+    color: #9999A1;
+  }
+  .feature__card h2::after {
+    display: block;
+    position: relative;
+    top: 5px;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: red;
+  }
+  .feature__card p {
+    position: absolute;
+    top: 62%;
+    left: 35px;
+    width: 80%;
+    height: auto;
+    padding: 5px 5px 5px 0;
+  }
+  .features__btn {
+    position: absolute;
+    bottom: 15px;
+    left: 35px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .features__btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100px;
+    height: 40px;
+    background: #EB0013;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-out;
+  }
+  .features__btn:hover::after {
+    transform: scaleX(1);
+  }
+  .features__btn a {
+    text-decoration: none;
+    color: #FBFBFB;
+  }
+  .features__btn svg {
+    position: relative;
+    top: 3px;
+    left: 10px;
+  }
+}/*# sourceMappingURL=features.css.map */

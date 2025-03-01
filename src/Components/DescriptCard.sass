@@ -4,13 +4,12 @@
 
 .description__card
     position: absolute
-    top: 140px
-    left: 20px
+    top: 10%
     display: none
     flex-direction: column
     justify-content: center
-    width: 320px
-    height: 400px
+    width: 80%
+    height: 85%
     border: 1px solid #000
     border-radius: 15px
     background: $main-white
@@ -31,41 +30,44 @@
         top: 0px
         display: flex
         width: 100%
-        height: 220px
+        height: 45%
         border-radius: 15px 15px 0 0
         filter: brightness(80%)
         box-shadow: 0px 1px 2px #000
 
-.card__text
-    position: relative
-    width: auto
-    max-width: 200px
-
 .desc__card__title
     position: absolute
-    top: 150px
-    display: flex
-    justify-content: center
-    justify-items: flex-start
+    top: 30%
     display: flex
     flex-direction: column
     justify-content: flex-start
     width: 90%
     height: 60px
-    color: $main-white
+
+.card__text
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    width: auto
+    max-width: 60%
+    height: auto
 
 .card__title__text
     width: 100%
     height: 15px
     padding: 0
     margin: 0 0 15px 0
-    font-size: 1.2em
+    font-size: clamp(1rem, 1rem + 0.5vw, 2rem)
+    color: $main-white
 
 .desc__card_subtitle
     width: 100%
     height: 15px
     padding: 0
     margin: 0
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem)
+    color: $main-white
 
 .desc__card__price
     position: absolute
@@ -82,8 +84,8 @@
 
 .product__description
     position: absolute
-    bottom: 70px
-    left: 18px
+    bottom: 28%
+    left: 5%
     display: flex
     justify-content: flex-start
     align-items: flex-start
@@ -95,14 +97,15 @@
 .product__description-text
     padding: 0
     margin: 0
-    font-size: 0.75em
+    font-size: clamp(0.8rem, 0.8rem + 0.5vw, 1rem)
+    text-align: center
 
 .card__btns
     position: absolute
     display: flex
     justify-content: space-around
-    bottom: 10px
-    left: 60px
+    bottom: 5%
+    left: 20%
     width: 60%
     height: 40px
 

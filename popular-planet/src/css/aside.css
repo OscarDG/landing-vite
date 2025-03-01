@@ -1,0 +1,52 @@
+@media screen and (max-width: 640px) {
+  .social__aside {
+    position: fixed;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    top: 200px;
+    right: 10px;
+    width: 40px;
+    height: 200px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .social__aside {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    top: 200px;
+    right: 10px;
+    width: 40px;
+    height: 200px;
+    z-index: 2;
+  }
+  .social__wrap__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 60px;
+    height: 180px;
+    background: transparent;
+  }
+  .social__wrap__list li {
+    position: relative;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .social__wrap__list li a {
+    cursor: pointer;
+  }
+  .social__wrap__list--scrolled svg {
+    fill: #000;
+  }
+}/*# sourceMappingURL=aside.css.map */
