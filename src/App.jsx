@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path= '/landing-vite/' element={<Home />}/>
-        <Route path='/landing-vite/STORE' element={
+        <Route path='landing-vite/STORE' element={
             <FiltersProvider>
                 <Store />
             </FiltersProvider>
